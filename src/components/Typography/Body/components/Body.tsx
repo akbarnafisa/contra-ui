@@ -16,19 +16,19 @@ const baseVariants = {
 }
 
 const variants = {
-  '21': {
+  21: {
     ...baseVariants,
     fontSize: '21'
   },
-  '17': {
+  17: {
     ...baseVariants,
     fontSize: '17'
   },
-  '15': {
+  15: {
     ...baseVariants,
     fontSize: '15'
   },
-  '12': {
+  12: {
     ...baseVariants,
     fontSize: '12'
   }

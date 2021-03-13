@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { variant, space, color } from 'styled-system'
-import { SpaceProps, ColorProps } from 'styled-system'
+import { variant, space, color, SpaceProps, ColorProps } from 'styled-system'
 
 const baseVariants = {
   fontFamily: 'title',
@@ -11,31 +10,31 @@ const baseVariants = {
 }
 
 const variants = {
-  '44': {
+  44: {
     ...baseVariants,
     fontSize: '44'
   },
-  '36': {
+  36: {
     ...baseVariants,
     fontSize: '36'
   },
-  '27': {
+  27: {
     ...baseVariants,
     fontSize: '27'
   },
-  '24': {
+  24: {
     ...baseVariants,
     fontSize: '24'
   },
-  '21': {
+  21: {
     ...baseVariants,
     fontSize: '21'
   },
-  '17': {
+  17: {
     ...baseVariants,
     fontSize: '17'
   },
-  '12': {
+  12: {
     ...baseVariants,
     fontSize: '12'
   }

@@ -7,7 +7,7 @@ import {
   FlexboxProps,
   ShadowProps,
   PositionProps,
-  GridProps
+  GridProps,
 } from 'styled-system'
 
 export type StyledSystemProps = SpaceProps &

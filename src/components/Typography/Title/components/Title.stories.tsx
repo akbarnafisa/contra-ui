@@ -3,7 +3,7 @@ import Title from './Title'
 
 export default {
   title: 'Core/Typography',
-  component: Title
+  component: Title,
 }
 
 export const TitleTypography = () => (

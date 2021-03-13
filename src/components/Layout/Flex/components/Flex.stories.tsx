@@ -5,7 +5,7 @@ import { Box } from '~/components/Box'
 
 export default {
   title: 'Core/Layout',
-  component: Flex
+  component: Flex,
 }
 
 export const FlexLayout = () => (

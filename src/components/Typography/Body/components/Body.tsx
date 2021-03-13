@@ -1,37 +1,41 @@
 import React from 'react'
 import styled from 'styled-components'
-import { variant, color, space, typography, layout } from 'styled-system'
 import {
+  variant,
+  color,
+  space,
+  typography,
+  layout,
   ColorProps,
   SpaceProps,
   TypographyProps,
-  LayoutProps
+  LayoutProps,
 } from 'styled-system'
 
 const baseVariants = {
   fontFamily: 'body',
   color: 'grey09',
   fontWeight: 'medium',
-  lineHeight: 'body'
+  lineHeight: 'body',
 }
 
 const variants = {
   21: {
     ...baseVariants,
-    fontSize: '21'
+    fontSize: '21',
   },
   17: {
     ...baseVariants,
-    fontSize: '17'
+    fontSize: '17',
   },
   15: {
     ...baseVariants,
-    fontSize: '15'
+    fontSize: '15',
   },
   12: {
     ...baseVariants,
-    fontSize: '12'
-  }
+    fontSize: '12',
+  },
 }
 
 export type StyledSystemProps = SpaceProps &
@@ -47,16 +51,16 @@ export interface BodyBaseProps extends StyledSystemProps {
 
 const Body = styled('p')<BodyBaseProps>(
   {
-    margin: 0
+    margin: 0,
   },
   variant({
     variants,
-    prop: 'level'
+    prop: 'level',
   }),
   color,
   space,
   typography,
-  layout
+  layout,
 )
 
 export default Body

@@ -7,14 +7,14 @@ import {
   flexbox,
   shadow,
   position,
-  grid
+  grid,
 } from 'styled-system'
-import { BoxSystemProps } from './BoxTypes'
 import shouldForwardProp from '@styled-system/should-forward-prop'
+import { BoxSystemProps } from './BoxTypes'
 
 const Box = styled('div').withConfig<BoxSystemProps>({ shouldForwardProp })(
   {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
   space,
   color,
@@ -23,7 +23,7 @@ const Box = styled('div').withConfig<BoxSystemProps>({ shouldForwardProp })(
   flexbox,
   shadow,
   position,
-  grid
+  grid,
 )
 
 export default Box

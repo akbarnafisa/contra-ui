@@ -1,11 +1,11 @@
 const fonts = {
   body: 'Montserrat, sans-serif',
-  title: 'Montserrat, sans-serif'
+  title: 'Montserrat, sans-serif',
 }
 
 const fontWeights = {
   medium: 500,
-  bold: 700
+  bold: 700,
 }
 
 const fontSizes = {
@@ -16,19 +16,19 @@ const fontSizes = {
   21: '21px',
   17: '17px',
   15: '15px',
-  12: '12px'
+  12: '12px',
 }
 
 const lineHeights = {
   body: 1.5,
-  title: 1.1
+  title: 1.1,
 }
 
 const typography = {
   fonts,
   fontSizes,
   fontWeights,
-  lineHeights
+  lineHeights,
 }
 
 export default typography

@@ -6,7 +6,7 @@ import { Body } from '~/components/Typography'
 
 export default {
   title: 'Core/Layout',
-  component: Stack
+  component: Stack,
 }
 
 export const StackLayout = () => (

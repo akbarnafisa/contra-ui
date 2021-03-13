@@ -7,16 +7,16 @@ export interface FlexProps {
 }
 const Flex = styled(Box)<FlexProps>(
   {
-    display: 'flex'
+    display: 'flex',
   },
   variant({
     variants: {
       center: {
         alignItems: 'center',
-        justifyContent: 'center'
-      }
-    }
-  })
+        justifyContent: 'center',
+      },
+    },
+  }),
 )
 
 export default Flex

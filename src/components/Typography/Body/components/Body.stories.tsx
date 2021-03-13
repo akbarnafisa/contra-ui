@@ -3,7 +3,7 @@ import Body from './Body'
 
 export default {
   title: 'Core/Typography',
-  component: Body
+  component: Body,
 }
 
 export const BodyTypography = () => (

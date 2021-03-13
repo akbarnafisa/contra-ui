@@ -1,7 +1,7 @@
 const borders = {
   none: 'none',
   thin: '1px solid',
-  md: '2px solid'
+  md: '2px solid',
 }
 
 const radii = {
@@ -12,10 +12,10 @@ const radii = {
   lg: 12,
   xl: 16,
   xxl: 32,
-  round: '99999em'
+  round: '99999em',
 }
 
 export default {
   borders,
-  radii
+  radii,
 }

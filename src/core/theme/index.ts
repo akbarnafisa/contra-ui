@@ -9,7 +9,7 @@ export const DefaultTheme = {
   space,
   shadows,
   ...border,
-  ...typography
+  ...typography,
 }
 
 export type Theme = typeof DefaultTheme

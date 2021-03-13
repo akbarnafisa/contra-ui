@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import * as React from 'react'
 import { action } from '@storybook/addon-actions'
 
@@ -6,7 +7,7 @@ import { Title } from '~/components/Typography'
 
 export default {
   title: 'Core/Layout',
-  component: Box
+  component: Box,
 }
 
 export const BoxLayout = () => (

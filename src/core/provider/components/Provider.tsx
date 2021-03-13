@@ -7,8 +7,7 @@ interface ProviderProps {
   children: React.ReactChildren | React.ReactChild
 }
 
-const FONT_URL =
-  'https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap'
+const FONT_URL = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap'
 
 const Provider: React.FC<ProviderProps> = ({ children }) => {
   React.useEffect(() => {

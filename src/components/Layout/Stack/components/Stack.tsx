@@ -1,5 +1,4 @@
 import React from 'react'
-import uuid from 'react-uuid'
 import { Box } from '~/components/Box'
 import { BoxSystemProps } from '~/components/Box/components/BoxTypes'
 import { Space } from '~/core/theme'
@@ -12,7 +11,7 @@ export interface StackProps
 
 const Stack: React.FC<StackProps> = ({ children, gap, ...rest }) => {
   const isChildrenValid = React.Children.toArray(children).filter(
-    React.isValidElement,
+    React.isValidElement
   )
 
   return (
@@ -22,7 +21,7 @@ const Stack: React.FC<StackProps> = ({ children, gap, ...rest }) => {
         const gapProps = { mb: isLastChild ? 0 : gap }
         if (typeof child === 'string' || child.type === React.Fragment) {
           return (
-            <Box key={`stack-id-${uuid()}`} {...gapProps}>
+            <Box key={`stack-id-${Math.random()}`} {...gapProps}>
               {child}
             </Box>
           )

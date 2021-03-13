@@ -16,7 +16,7 @@ const Flex = styled(Box)<FlexProps>(
         justifyContent: 'center',
       },
     },
-  }),
+  })
 )
 
 export default Flex

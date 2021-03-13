@@ -60,7 +60,7 @@ const Body = styled('p')<BodyBaseProps>(
   color,
   space,
   typography,
-  layout,
+  layout
 )
 
 export default Body

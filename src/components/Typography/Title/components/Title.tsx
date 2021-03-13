@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  variant, space, color, SpaceProps, ColorProps,
-} from 'styled-system'
+import { variant, space, color, SpaceProps, ColorProps } from 'styled-system'
 
 const baseVariants = {
   fontFamily: 'title',
@@ -57,7 +55,7 @@ const Title = styled('h2')<TitleBaseProps>(
     prop: 'level',
   }),
   space,
-  color,
+  color
 )
 
 export default Title

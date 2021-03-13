@@ -23,7 +23,7 @@ const Box = styled('div').withConfig<BoxSystemProps>({ shouldForwardProp })(
   flexbox,
   shadow,
   position,
-  grid,
+  grid
 )
 
 export default Box

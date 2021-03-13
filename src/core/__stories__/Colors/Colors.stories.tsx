@@ -22,22 +22,27 @@ const primaryData = [
   { bg: 'blue01', hex: '#E9E7FC' },
   { bg: 'blue03', hex: '#8094FF' },
   {
-    bg: 'blue05', hex: '#1947E5', textColor: 'white', isLast: true,
+    bg: 'blue05',
+    hex: '#1947E5',
+    textColor: 'white',
+    isLast: true,
   },
 ]
 
 export const Primary = () => (
   <Box style={LAYOUT_WRAPPER}>
-    {primaryData.map((color) => (color.title ? (
-      <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
-    ) : (
-      <ColorSwatchItem
-        bg={color.bg}
-        hex={color.hex}
-        textColor={color.textColor}
-        isLast={color.isLast}
-      />
-    )))}
+    {primaryData.map(color =>
+      color.title ? (
+        <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
+      ) : (
+        <ColorSwatchItem
+          bg={color.bg}
+          hex={color.hex}
+          textColor={color.textColor}
+          isLast={color.isLast}
+        />
+      )
+    )}
   </Box>
 )
 
@@ -46,22 +51,27 @@ const pinkData = [
   { bg: 'pink01', hex: '#FFF3F8' },
   { bg: 'pink03', hex: '#FFC7DE' },
   {
-    bg: 'pink05', hex: '#FF89BB', textColor: 'white', isLast: true,
+    bg: 'pink05',
+    hex: '#FF89BB',
+    textColor: 'white',
+    isLast: true,
   },
 ]
 
 export const Pink = () => (
   <Box style={LAYOUT_WRAPPER}>
-    {pinkData.map((color) => (color.title ? (
-      <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
-    ) : (
-      <ColorSwatchItem
-        bg={color.bg}
-        hex={color.hex}
-        textColor={color.textColor}
-        isLast={color.isLast}
-      />
-    )))}
+    {pinkData.map(color =>
+      color.title ? (
+        <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
+      ) : (
+        <ColorSwatchItem
+          bg={color.bg}
+          hex={color.hex}
+          textColor={color.textColor}
+          isLast={color.isLast}
+        />
+      )
+    )}
   </Box>
 )
 
@@ -79,16 +89,18 @@ const yellowData = [
 
 export const Yellow = () => (
   <Box style={LAYOUT_WRAPPER}>
-    {yellowData.map((color) => (color.title ? (
-      <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
-    ) : (
-      <ColorSwatchItem
-        bg={color.bg}
-        hex={color.hex}
-        textColor={color.textColor}
-        isLast={color.isLast}
-      />
-    )))}
+    {yellowData.map(color =>
+      color.title ? (
+        <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
+      ) : (
+        <ColorSwatchItem
+          bg={color.bg}
+          hex={color.hex}
+          textColor={color.textColor}
+          isLast={color.isLast}
+        />
+      )
+    )}
   </Box>
 )
 
@@ -106,16 +118,18 @@ const greenData = [
 
 export const Green = () => (
   <Box style={LAYOUT_WRAPPER}>
-    {greenData.map((color) => (color.title ? (
-      <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
-    ) : (
-      <ColorSwatchItem
-        bg={color.bg}
-        hex={color.hex}
-        textColor={color.textColor}
-        isLast={color.isLast}
-      />
-    )))}
+    {greenData.map(color =>
+      color.title ? (
+        <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
+      ) : (
+        <ColorSwatchItem
+          bg={color.bg}
+          hex={color.hex}
+          textColor={color.textColor}
+          isLast={color.isLast}
+        />
+      )
+    )}
   </Box>
 )
 
@@ -133,16 +147,18 @@ const redData = [
 
 export const Red = () => (
   <Box style={LAYOUT_WRAPPER}>
-    {redData.map((color) => (color.title ? (
-      <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
-    ) : (
-      <ColorSwatchItem
-        bg={color.bg}
-        hex={color.hex}
-        textColor={color.textColor}
-        isLast={color.isLast}
-      />
-    )))}
+    {redData.map(color =>
+      color.title ? (
+        <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
+      ) : (
+        <ColorSwatchItem
+          bg={color.bg}
+          hex={color.hex}
+          textColor={color.textColor}
+          isLast={color.isLast}
+        />
+      )
+    )}
   </Box>
 )
 
@@ -163,15 +179,17 @@ const greyData = [
 
 export const Grey = () => (
   <Box style={LAYOUT_WRAPPER}>
-    {greyData.map((color) => (color.title ? (
-      <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
-    ) : (
-      <ColorSwatchItem
-        bg={color.bg}
-        hex={color.hex}
-        textColor={color.textColor}
-        isLast={color.isLast}
-      />
-    )))}
+    {greyData.map(color =>
+      color.title ? (
+        <ColorSwatchTitle bg={color.bg} hex={color.hex} title={color.title} />
+      ) : (
+        <ColorSwatchItem
+          bg={color.bg}
+          hex={color.hex}
+          textColor={color.textColor}
+          isLast={color.isLast}
+        />
+      )
+    )}
   </Box>
 )

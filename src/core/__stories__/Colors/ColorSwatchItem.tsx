@@ -16,13 +16,13 @@ const ColorSwatchTitle: React.FC<Props> = ({
   textColor = 'grey09',
   isLast,
 }) => {
-  const setBorderBottom = (): object | null => (
+  const setBorderBottom = (): object | null =>
     isLast
       ? {
-        borderBottomLeftRadius: 'md',
-        borderBottomRightRadius: 'md',
-      }
-      : null)
+          borderBottomLeftRadius: 'md',
+          borderBottomRightRadius: 'md',
+        }
+      : null
   return (
     <Flex
       justifyContent="space-between"

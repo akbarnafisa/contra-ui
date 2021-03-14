@@ -3,10 +3,10 @@ export interface InputBaseTypes {
   children?: React.ReactNode
   style?: React.CSSProperties
 
-  disabled?: boolean
   placeholder?: string
 }
 
 export interface InputWrapperTypes {
   isError?: boolean
+  disabled?: boolean
 }

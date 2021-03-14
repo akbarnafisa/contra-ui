@@ -29,6 +29,7 @@ const Input: React.FC<InputProps> = ({
       className={className}
       style={style}
       isError={isError}
+      disabled={disabled}
     >
       {children}
       <InputElement

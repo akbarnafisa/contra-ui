@@ -1,5 +1,5 @@
 import css, { CssFunctionReturnType } from '@styled-system/css'
-import { InputBaseTypes, InputWrapperTypes } from './InputTypes'
+import { InputWrapperTypes } from './InputTypes'
 
 export const InputWrapperStyle = (
   props: InputWrapperTypes
@@ -7,6 +7,7 @@ export const InputWrapperStyle = (
   css({
     border: 'md',
     borderColor: `${props.isError ? 'red05' : 'black'}`,
+    backgroundColor: `${props.disabled ? 'grey01' : 'white'}`,
     borderRadius: 'xl',
     overflow: 'hidden',
     position: 'relative',
@@ -15,10 +16,9 @@ export const InputWrapperStyle = (
     alignItems: 'Center',
   })
 
-export const InputStyle = (props: InputBaseTypes): CssFunctionReturnType =>
+export const InputStyle = (): CssFunctionReturnType =>
   css({
     padding: '12px 16px',
-    backgroundColor: `${props.disabled ? 'grey01' : 'white'}`,
     color: 'black',
     fontWeight: 'normal',
     fontSize: '21px',

@@ -12,19 +12,16 @@ type InputTypes = InputBaseTypes & InputWrapperTypes
 export default {
   title: 'Component/Input',
   component: Input,
-  argTypes: {
-    disabled: {
-      table: {
-        disable: true,
-      },
-    },
-  },
 }
 
 export const Example: Story<InputTypes> = args => (
-  <Input {...args} placeholder="Email Address">
+  <Input {...args}>
     <Box ml="md">
       <IconUser />
     </Box>
   </Input>
 )
+
+Example.args = {
+  placeholder: 'Email Address',
+}

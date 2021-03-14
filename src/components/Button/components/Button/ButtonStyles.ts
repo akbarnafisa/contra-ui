@@ -1,6 +1,6 @@
 import css, { CssFunctionReturnType } from '@styled-system/css'
 import { variant } from 'styled-system'
-import { DefaultTheme as theme } from '../../../../core/theme'
+import { DefaultTheme as theme } from '~/core/theme'
 import BorderMixins from '~/utils/styles/BorderMixins'
 
 import { ButtonBaseProps } from './ButtonTypes'

@@ -57,7 +57,6 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef<
 Avatar.defaultProps = {
   size: '48',
   appearance: 'yellow',
-  entityName: 'John Doe',
 }
 
 export default Avatar

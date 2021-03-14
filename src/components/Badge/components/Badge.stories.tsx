@@ -32,6 +32,10 @@ export const PlayGround: Story<BadgeBaseProps> = args => (
   <Badge onClick={action('button-click')} {...args} />
 )
 
+PlayGround.args = {
+  children: 'Badge Text',
+}
+
 PlayGround.argTypes = {
   appearance: {
     control: {
@@ -39,8 +43,5 @@ PlayGround.argTypes = {
       options: ['green', 'pink', 'red', 'yellow'],
     },
     defaultValue: 'green',
-  },
-  children: {
-    defaultValue: 'Badge Text',
   },
 }

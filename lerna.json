@@ -1,0 +1,19 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "version": {
+      "allowBranch": "master"
+    },
+    "publish": {
+      "conventionalCommits": true,
+      "allowBranch": "master",
+      "message": "chore(release): publish"
+    }
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "registry": "http://npm.tool.dana.id/",
+  "version": "independent"
+}

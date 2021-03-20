@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "contra-ui",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "description": "Contra UI Component",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akbarnafisa/contra-ui"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev:core": "yarn workspace @contra-ui/core start",
+    "build:core": "yarn workspace @contra-ui/core build",
+    "storybook": "yarn workspace @contra-ui/core storybook",
+    "lerna:clean": "lerna clean",
+    "lerna:bootstrap": "lerna bootstrap --use-workspaces",
+    "lerna:link": "lerna link",
+    "lerna:new-version": "lerna version patch --conventional-commits",
+    "lerna:publish": "lerna publish from-package"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "lerna": "^3.22.1"
+  }
+}

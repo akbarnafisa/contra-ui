@@ -1,16 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  variant,
-  color,
-  space,
-  typography,
-  layout,
-  ColorProps,
-  SpaceProps,
-  TypographyProps,
-  LayoutProps,
-} from 'styled-system'
+
+import { variant } from 'styled-system'
+
+import { allSystemProps, AllSystemProps, sfp } from '~/utils/props'
 
 const baseVariants = {
   fontFamily: 'body',
@@ -38,18 +31,18 @@ const variants = {
   },
 }
 
-export type StyledSystemProps = SpaceProps &
-  ColorProps &
-  LayoutProps &
-  TypographyProps
+export type StyledSystemProps = AllSystemProps
 
 export interface BodyBaseProps extends StyledSystemProps {
   className?: string
   style?: React.CSSProperties
   level?: '21' | '17' | '15' | '12'
+  color?: string
 }
 
-const Body = styled('p')<BodyBaseProps>(
+const Body = styled('p').withConfig<BodyBaseProps>({
+  shouldForwardProp: sfp(['level']),
+})(
   {
     margin: 0,
   },
@@ -57,10 +50,7 @@ const Body = styled('p')<BodyBaseProps>(
     variants,
     prop: 'level',
   }),
-  color,
-  space,
-  typography,
-  layout
+  allSystemProps
 )
 
 export default Body

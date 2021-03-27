@@ -1,23 +1,7 @@
 import React from 'react'
-import {
-  SpaceProps,
-  ColorProps,
-  BorderProps,
-  LayoutProps,
-  FlexboxProps,
-  ShadowProps,
-  PositionProps,
-  GridProps,
-} from 'styled-system'
+import { AllSystemProps } from '~/utils/props'
 
-export type StyledSystemProps = SpaceProps &
-  ColorProps &
-  BorderProps &
-  LayoutProps &
-  FlexboxProps &
-  ShadowProps &
-  PositionProps &
-  GridProps
+export type StyledSystemProps = AllSystemProps
 
 export interface BoxSystemProps extends StyledSystemProps {
   className?: string

@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { variant, space, color, SpaceProps, ColorProps } from 'styled-system'
+
+import { variant } from 'styled-system'
+
+import { allSystemProps, AllSystemProps, sfp } from '~/utils/props'
 
 const baseVariants = {
   fontFamily: 'title',
@@ -10,6 +13,10 @@ const baseVariants = {
 }
 
 const variants = {
+  54: {
+    ...baseVariants,
+    fontSize: '54',
+  },
   44: {
     ...baseVariants,
     fontSize: '44',
@@ -40,13 +47,18 @@ const variants = {
   },
 }
 
-export interface TitleBaseProps extends SpaceProps, ColorProps {
+export type StyledSystemProps = AllSystemProps
+
+export interface TitleBaseProps extends StyledSystemProps {
   className?: string
   style?: React.CSSProperties
-  level?: '44' | '36' | '27' | '24' | '21' | '17' | '12'
+  level?: '54' | '44' | '36' | '27' | '24' | '21' | '17' | '12'
+  color?: string
 }
 
-const Title = styled('h2')<TitleBaseProps>(
+const Title = styled('h2').withConfig<TitleBaseProps>({
+  shouldForwardProp: sfp(['level']),
+})(
   {
     margin: 0,
   },
@@ -54,8 +66,7 @@ const Title = styled('h2')<TitleBaseProps>(
     variants,
     prop: 'level',
   }),
-  space,
-  color
+  allSystemProps
 )
 
 export default Title

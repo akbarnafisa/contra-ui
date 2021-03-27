@@ -47,16 +47,15 @@ const variants = {
   },
 }
 
-export type StyledSystemProps = AllSystemProps
 
-export interface TitleBaseProps extends StyledSystemProps {
+export interface TitleProps extends AllSystemProps {
   className?: string
   style?: React.CSSProperties
   level?: '54' | '44' | '36' | '27' | '24' | '21' | '17' | '12'
   color?: string
 }
 
-const Title = styled('h2').withConfig<TitleBaseProps>({
+const Title = styled('h2').withConfig<TitleProps>({
   shouldForwardProp: sfp(['level']),
 })(
   {

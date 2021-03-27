@@ -34,14 +34,14 @@ const variants = {
 
 export type StyledSystemProps = AllSystemProps
 
-export interface BodyBaseProps extends StyledSystemProps {
+export interface AnchorProps extends StyledSystemProps {
   className?: string
   style?: React.CSSProperties
   level?: '21' | '17' | '15' | '12'
   color?: string
 }
 
-const Anchor = styled('a').withConfig<BodyBaseProps>({
+const Anchor = styled('a').withConfig<AnchorProps>({
   shouldForwardProp: sfp(['level']),
 })(
   {

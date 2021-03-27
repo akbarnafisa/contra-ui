@@ -3,7 +3,9 @@ import { allSystemProps, shouldForwardProp } from '~/utils/props'
 
 import { BoxSystemProps } from './BoxTypes'
 
-const Box = styled('div').withConfig<BoxSystemProps>({ shouldForwardProp })(
+export interface BoxProps extends BoxSystemProps {}
+
+const Box = styled('div').withConfig<BoxProps>({ shouldForwardProp })(
   {
     boxSizing: 'border-box',
   },

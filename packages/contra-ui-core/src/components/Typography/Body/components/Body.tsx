@@ -31,16 +31,14 @@ const variants = {
   },
 }
 
-export type StyledSystemProps = AllSystemProps
-
-export interface BodyBaseProps extends StyledSystemProps {
+export interface BodyProps extends AllSystemProps {
   className?: string
   style?: React.CSSProperties
   level?: '21' | '17' | '15' | '12'
   color?: string
 }
 
-const Body = styled('p').withConfig<BodyBaseProps>({
+const Body = styled('p').withConfig<BodyProps>({
   shouldForwardProp: sfp(['level']),
 })(
   {

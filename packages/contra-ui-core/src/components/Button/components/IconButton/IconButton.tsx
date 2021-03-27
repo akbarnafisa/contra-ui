@@ -8,17 +8,17 @@ import {
   IconButtonSizes,
 } from './IconButtonStyles'
 
-export interface ButtonProps
+export interface IconButtonProps
   extends IconButtonBaseProps,
     React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-const IconButtonBase = styled.button<ButtonProps>(
+const IconButtonBase = styled.button<IconButtonProps>(
   IconButtonBaseStyle,
   IconButtonSizes,
   IconButtonVariants
 )
 
-const IconButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
   (
     { className, style, children, disabled, variant, type, size, ...rest },
     ref

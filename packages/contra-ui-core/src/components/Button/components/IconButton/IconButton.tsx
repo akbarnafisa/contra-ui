@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { commonProps } from '~/utils/props'
 
 import { IconButtonBaseProps } from './IconButtonTypes'
 import {
@@ -15,7 +16,8 @@ export interface IconButtonProps
 const IconButtonBase = styled.button<IconButtonProps>(
   IconButtonBaseStyle,
   IconButtonSizes,
-  IconButtonVariants
+  IconButtonVariants,
+  commonProps
 )
 
 const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(

@@ -1,4 +1,6 @@
-export interface IconButtonBaseProps {
+import { CommonSystemProps } from '~/utils/props'
+
+export interface IconButtonBaseProps extends CommonSystemProps {
   className?: string
   style?: React.CSSProperties
 

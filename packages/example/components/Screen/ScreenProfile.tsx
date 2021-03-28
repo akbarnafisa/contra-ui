@@ -51,7 +51,7 @@ const Header = () => (
       justifyContent="space-between"
     >
       <Button
-        variant="teritary"
+        appearance="teritary"
         block={true}
         mr="md"
       >
@@ -65,7 +65,7 @@ const Header = () => (
           </Title>
         </Flex>
       </Button>
-      <IconButton variant="teritary">
+      <IconButton appearance="teritary">
         <IconPlus width="28" height="28" />
       </IconButton>
     </Flex>

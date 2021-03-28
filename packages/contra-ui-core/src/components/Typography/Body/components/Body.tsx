@@ -1,32 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import css from '@styled-system/css'
 import { variant } from 'styled-system'
 
 import { allSystemProps, AllSystemProps, sfp } from '~/utils/props'
 
-const baseVariants = {
-  fontFamily: 'body',
-  color: 'grey09',
-  fontWeight: 'medium',
-  lineHeight: 'body',
-}
-
 const variants = {
   21: {
-    ...baseVariants,
     fontSize: '21',
   },
   17: {
-    ...baseVariants,
     fontSize: '17',
   },
   15: {
-    ...baseVariants,
     fontSize: '15',
   },
   12: {
-    ...baseVariants,
     fontSize: '12',
   },
 }
@@ -41,12 +31,17 @@ export interface BodyProps extends AllSystemProps {
 const Body = styled('p').withConfig<BodyProps>({
   shouldForwardProp: sfp(['level']),
 })(
-  {
-    margin: 0,
-  },
+  {},
   variant({
     variants,
     prop: 'level',
+  }),
+  css({
+    margin: 0,
+    fontFamily: 'body',
+    color: 'grey09',
+    fontWeight: 'normal',
+    lineHeight: 'body',
   }),
   allSystemProps
 )

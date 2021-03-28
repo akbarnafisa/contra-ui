@@ -1,4 +1,6 @@
-export interface BadgeBaseProps {
+import { CommonSystemProps } from '~/utils/props'
+
+export interface BadgeBaseProps extends CommonSystemProps {
   className?: string
   style?: React.CSSProperties
   children?: React.ReactNode

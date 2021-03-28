@@ -15,6 +15,8 @@ const space = {
   xl: 32,
   /** Equivalent to 48px */
   xxl: 48,
+  /** Equivalent to 48px */
+  xxxl: 64,
 }
 
 export default space

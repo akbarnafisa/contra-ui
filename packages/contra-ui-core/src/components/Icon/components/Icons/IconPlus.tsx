@@ -10,14 +10,21 @@ const IconCheck: React.FC<IconTypes> = ({ size, color, ...props }) => (
     width={size}
     height={size}
     {...props}
-    viewBox="0 0 24 24"
+    viewBox="0 0 28 28"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M20 6L9 17L4 12"
+      d="M14 5.83337V22.1667"
       stroke={color}
-      strokeWidth="2"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.8335 14H22.1668"
+      stroke={color}
+      strokeWidth="3"
       strokeLinecap="round"
       strokeLinejoin="round"
     />

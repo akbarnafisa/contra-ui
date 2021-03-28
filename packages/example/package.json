@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
+    "dev:ts": "yarn dev & yarn ts:watch",
+    "ts:watch": "yarn tsc --watch",
     "build": "next build",
     "start": "next start"
   },

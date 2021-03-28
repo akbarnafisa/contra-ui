@@ -16,6 +16,10 @@ export const Default = () => <Badge> Badge Text </Badge>
 export const Appearance = () => (
   <>
     <Badge mr="xs">Badge Text</Badge>
+    <Badge mr="xs" appearance="blue">Badge Text</Badge>
+    <Badge mr="xs" appearance="green">
+      Badge Text
+    </Badge>
     <Badge mr="xs" appearance="pink">
       Badge Text
     </Badge>
@@ -40,8 +44,7 @@ PlayGround.argTypes = {
   appearance: {
     control: {
       type: 'select',
-      options: ['green', 'pink', 'red', 'yellow'],
+      options: ['green', 'pink', 'red', 'yellow', 'blue'],
     },
-    defaultValue: 'green',
   },
 }

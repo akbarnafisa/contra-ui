@@ -39,14 +39,12 @@ export const ButtonSizes = (): CssFunctionReturnType =>
     variants: {
       medium: {
         fontSize: '21',
-        px: 'md',
         height: '60px',
         boxShadow: `0 3px 0 ${theme.colors.grey09}`,
         ...BorderMixins('2px solid black', 'xl'),
       },
       small: {
         fontSize: '12',
-        px: 'md',
         py: '10px',
         boxShadow: `0 2px 0 ${theme.colors.grey09}`,
         ...BorderMixins('2px solid black', 'xl'),

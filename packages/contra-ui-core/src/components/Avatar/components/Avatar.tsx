@@ -24,6 +24,7 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef<
     }
 
     const renderChild = (): JSX.Element | null => {
+      // TODO: if error, show initial name
       if (src) {
         return <img src={src} alt={alt} />
       }

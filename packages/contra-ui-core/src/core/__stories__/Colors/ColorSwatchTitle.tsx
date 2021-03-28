@@ -14,8 +14,8 @@ const ColorSwatchTitle: React.FC<Props> = ({ bg, title, hex }) => (
   <Box
     bg={bg}
     p="md"
-    borderTopLeftRadius="md"
-    borderTopRightRadius="md"
+    borderTopLeftRadius="xs"
+    borderTopRightRadius="xs"
     boxShadow="0 4px 8px -2px rgba(0, 0, 0, 0.32)"
     position="relative"
     zIndex={1}

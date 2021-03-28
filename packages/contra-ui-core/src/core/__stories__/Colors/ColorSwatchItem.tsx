@@ -19,8 +19,8 @@ const ColorSwatchTitle: React.FC<Props> = ({
   const setBorderBottom = (): object | null =>
     isLast
       ? {
-          borderBottomLeftRadius: 'md',
-          borderBottomRightRadius: 'md',
+          borderBottomLeftRadius: 'xs',
+          borderBottomRightRadius: 'xs',
         }
       : null
   return (

@@ -24,7 +24,7 @@ export const ButtonVariants = (): CssFunctionReturnType =>
         bg: 'white',
         color: 'red05',
         boxShadow: `0 2px 0 ${theme.colors.red05}`,
-        ...BorderMixins('2px solid #F95A2C', 'xl'),
+        ...BorderMixins('2px solid #F95A2C', 'md'),
 
         '&:active': {
           boxShadow: `0 1px 0 ${theme.colors.red05}`,
@@ -41,13 +41,13 @@ export const ButtonSizes = (): CssFunctionReturnType =>
         fontSize: '21',
         height: '60px',
         boxShadow: `0 3px 0 ${theme.colors.grey09}`,
-        ...BorderMixins('2px solid black', 'xl'),
+        ...BorderMixins('2px solid black', 'md'),
       },
       small: {
         fontSize: '12',
         py: '10px',
         boxShadow: `0 2px 0 ${theme.colors.grey09}`,
-        ...BorderMixins('2px solid black', 'xl'),
+        ...BorderMixins('2px solid black', 'md'),
       },
     },
   })
@@ -59,7 +59,7 @@ export const ButtonBaseStyle = (
     width: `${props.block ? '100%' : 'inherit'}`,
     px: 'md',
     py: 'xs',
-    borderRadius: 'xl',
+    borderRadius: 'md',
     fontFamily: 'body',
     fontWeight: 'bold',
     textDecoration: 'none',

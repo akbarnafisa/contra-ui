@@ -8,7 +8,7 @@ export const InputWrapperStyle = (
     border: 'md',
     borderColor: `${props.isError ? 'red05' : 'black'}`,
     backgroundColor: `${props.disabled ? 'grey01' : 'white'}`,
-    borderRadius: 'xl',
+    borderRadius: 'md',
     overflow: 'hidden',
     position: 'relative',
     display: 'flex',

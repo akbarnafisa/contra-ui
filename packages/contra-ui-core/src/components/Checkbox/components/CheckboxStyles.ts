@@ -45,7 +45,7 @@ export const CheckboxDotStyle = (): CssFunctionReturnType =>
 
     '&:before': {
       border: 'md',
-      borderRadius: 'md',
+      borderRadius: 'xs',
       left: 0,
       top: 0,
       minHeight: '28px',

@@ -16,7 +16,7 @@ export const BoxLayout = () => (
     p="md"
     bg="pink03"
     border="md"
-    borderRadius="md"
+    borderRadius="xs"
   >
     <Title level="17" color="black">
       Almost before we knew it, we had left the ground.

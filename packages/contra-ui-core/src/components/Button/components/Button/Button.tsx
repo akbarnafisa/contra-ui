@@ -23,7 +23,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       style,
       children,
       disabled,
-      variant,
+      appearance,
       type,
       size,
       block,
@@ -36,7 +36,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className={className}
         style={style}
         disabled={disabled}
-        variant={variant}
+        appearance={appearance}
         ref={ref}
         type={type}
         size={size}
@@ -50,7 +50,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 )
 
 Button.defaultProps = {
-  variant: 'primary',
+  appearance: 'primary',
   type: 'button',
   size: 'medium',
 }

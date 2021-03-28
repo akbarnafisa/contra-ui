@@ -7,6 +7,7 @@ import { ButtonBaseProps } from './ButtonTypes'
 
 export const ButtonVariants = (): CssFunctionReturnType =>
   variant({
+    prop: 'appearance',
     variants: {
       primary: {
         bg: 'blue05',

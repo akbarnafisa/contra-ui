@@ -17,16 +17,16 @@ export default {
 export const Appearance = () => (
   <Stack gap="md">
     <Box>
-      <Button variant="primary">Button Text</Button>
+      <Button appearance="primary">Button Text</Button>
     </Box>
     <Box>
-      <Button variant="secondary">Button Text</Button>
+      <Button appearance="secondary">Button Text</Button>
     </Box>
     <Box>
-      <Button variant="teritary">Button Text</Button>
+      <Button appearance="teritary">Button Text</Button>
     </Box>
     <Box>
-      <Button variant="destructive">Button Text</Button>
+      <Button appearance="destructive">Button Text</Button>
     </Box>
   </Stack>
 )
@@ -34,22 +34,22 @@ export const Appearance = () => (
 export const Size = () => (
   <Stack gap="md">
     <Box>
-      <Button size="small" variant="primary">
+      <Button size="small" appearance="primary">
         Button Text
       </Button>
     </Box>
     <Box>
-      <Button size="small" variant="secondary">
+      <Button size="small" appearance="secondary">
         Button Text
       </Button>
     </Box>
     <Box>
-      <Button size="small" variant="teritary">
+      <Button size="small" appearance="teritary">
         Button Text
       </Button>
     </Box>
     <Box>
-      <Button size="small" variant="destructive">
+      <Button size="small" appearance="destructive">
         Button Text
       </Button>
     </Box>
@@ -62,6 +62,6 @@ export const PlayGround: Story<ButtonBaseProps> = args => (
 
 PlayGround.args = {
   size: 'medium',
-  variant: 'primary',
+  appearance: 'primary',
   children: 'Button Text',
 }

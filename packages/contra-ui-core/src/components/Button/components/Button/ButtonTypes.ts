@@ -5,6 +5,6 @@ export interface ButtonBaseProps extends CommonSystemProps {
   children?: React.ReactNode
   disabled?: boolean
   size?: 'small' | 'medium'
-  variant?: 'primary' | 'secondary' | 'teritary' | 'destructive'
+  appearance?: 'primary' | 'secondary' | 'teritary' | 'destructive'
   block?: boolean
 }

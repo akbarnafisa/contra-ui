@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { commonProps } from '~/utils/props'
 
 import { ButtonBaseProps } from './ButtonTypes'
 import { ButtonBaseStyle, ButtonVariants, ButtonSizes } from './ButtonStyles'
@@ -11,7 +12,8 @@ export interface ButtonProps
 const ButtonBase = styled.button<ButtonProps>(
   ButtonBaseStyle,
   ButtonSizes,
-  ButtonVariants
+  ButtonVariants,
+  commonProps
 )
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

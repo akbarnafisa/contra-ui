@@ -31,7 +31,7 @@ export function sfp(p: string[] = []) {
   return createShouldForwardProp([...props, ...p])
 }
 
-export const shouldForwardProp = createShouldForwardProp(props);
+export const shouldForwardProp = createShouldForwardProp(props)
 
 export type AllSystemProps = LayoutProps &
   FlexboxProps &
@@ -55,4 +55,20 @@ export const allSystemProps = compose(
   border,
   shadow,
   typography
+)
+
+export type CommonSystemProps = LayoutProps &
+  PositionProps &
+  FlexboxProps &
+  GridProps &
+  SpaceProps &
+  BorderProps
+
+export const commonProps = compose(
+  layout,
+  position,
+  flexbox,
+  grid,
+  space,
+  border
 )

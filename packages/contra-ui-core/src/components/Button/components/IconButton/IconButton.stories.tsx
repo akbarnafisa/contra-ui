@@ -20,22 +20,22 @@ export default {
 export const Appearance = () => (
   <Stack gap="md">
     <Box>
-      <IconButton variant="primary">
+      <IconButton appearance="primary">
         <IconCross color="white" />
       </IconButton>
     </Box>
     <Box>
-      <IconButton variant="secondary">
+      <IconButton appearance="secondary">
         <IconCross color="white" />
       </IconButton>
     </Box>
     <Box>
-      <IconButton variant="teritary">
+      <IconButton appearance="teritary">
         <IconCross />
       </IconButton>
     </Box>
     <Box>
-      <IconButton variant="destructive">
+      <IconButton appearance="destructive">
         <IconCross color={theme.colors.red05} />
       </IconButton>
     </Box>
@@ -45,17 +45,17 @@ export const Appearance = () => (
 export const Size = () => (
   <Stack gap="md">
     <Box>
-      <IconButton size="small" variant="teritary">
+      <IconButton size="small" appearance="teritary">
         <IconCross size="18" />
       </IconButton>
     </Box>
     <Box>
-      <IconButton size="medium" variant="teritary">
+      <IconButton size="medium" appearance="teritary">
         <IconCross />
       </IconButton>
     </Box>
     <Box>
-      <IconButton size="large" variant="teritary">
+      <IconButton size="large" appearance="teritary">
         <IconCross size="32" />
       </IconButton>
     </Box>
@@ -68,5 +68,5 @@ export const PlayGround: Story<IconButtonBaseProps> = args => (
 
 PlayGround.args = {
   size: 'medium',
-  variant: 'primary',
+  appearance: 'primary',
 }

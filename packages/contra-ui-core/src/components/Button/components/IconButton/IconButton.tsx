@@ -22,7 +22,7 @@ const IconButtonBase = styled.button<IconButtonProps>(
 
 const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
   (
-    { className, style, children, disabled, variant, type, size, ...rest },
+    { className, style, children, disabled, appearance, type, size, ...rest },
     ref
   ) => {
     return (
@@ -30,7 +30,7 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
         className={className}
         style={style}
         disabled={disabled}
-        variant={variant}
+        appearance={appearance}
         ref={ref}
         type={type}
         size={size}
@@ -45,7 +45,7 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
 IconButton.defaultProps = {
   size: 'medium',
   type: 'button',
-  variant: 'primary',
+  appearance: 'primary',
 }
 
 export default IconButton

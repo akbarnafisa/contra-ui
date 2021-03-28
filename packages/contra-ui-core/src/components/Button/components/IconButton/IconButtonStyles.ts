@@ -6,6 +6,7 @@ import BorderMixins from '~/utils/styles/BorderMixins'
 
 export const IconButtonVariants = (): CssFunctionReturnType =>
   variant({
+    prop: 'appearance',
     variants: {
       primary: {
         bg: 'blue05',

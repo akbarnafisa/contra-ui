@@ -7,5 +7,5 @@ export interface IconButtonBaseProps extends CommonSystemProps {
   children?: React.ReactNode
   disabled?: boolean
   size?: 'small' | 'medium' | 'large'
-  variant?: 'primary' | 'secondary' | 'teritary' | 'destructive'
+  appearance?: 'primary' | 'secondary' | 'teritary' | 'destructive'
 }

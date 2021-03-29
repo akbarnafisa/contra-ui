@@ -48,8 +48,8 @@ export const CheckboxDotStyle = (): CssFunctionReturnType =>
       borderRadius: 'xs',
       left: 0,
       top: 0,
-      minHeight: '28px',
-      minWidth: '28px',
+      minHeight: '32px',
+      minWidth: '32px',
       bg: 'blue01',
     },
 
@@ -57,9 +57,9 @@ export const CheckboxDotStyle = (): CssFunctionReturnType =>
       borderLeft: '3px solid black',
       borderBottom: '3px solid black',
       transform: 'rotate(-45deg)',
-      height: '6px',
-      width: '12px',
-      left: '9px',
+      height: '9px',
+      width: '16px',
+      left: '8px',
       top: '9px',
     },
   })

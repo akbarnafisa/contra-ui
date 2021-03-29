@@ -6,6 +6,6 @@ import { BadgeBaseStyle } from './BadgeStyles'
 
 export interface BadgeProps extends BadgeBaseProps {}
 
-const ButtonBase = styled.span<BadgeProps>(BadgeBaseStyle, commonProps)
+const Badge = styled.span<BadgeProps>(BadgeBaseStyle, commonProps)
 
-export default ButtonBase
+export default Badge

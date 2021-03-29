@@ -5,8 +5,7 @@ import BorderMixins from '~/utils/styles/BorderMixins'
 export const BadgeBaseStyle = (props: BadgeBaseProps): CssFunctionReturnType =>
   css({
     bg: `${props.appearance + '01' || 'white'}`,
-    px: 'sm',
-    py: '10px',
+    p: 'sm',
     fontFamily: 'body',
     fontWeight: 'bold',
     fontSize: '12',

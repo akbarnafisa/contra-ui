@@ -50,8 +50,8 @@ export const RadioDotStyle = (): CssFunctionReturnType =>
       borderRadius: '100%',
       left: 0,
       top: 0,
-      minHeight: '28px',
-      minWidth: '28px',
+      minHeight: '32px',
+      minWidth: '32px',
       bg: 'blue01',
     },
 
@@ -59,7 +59,7 @@ export const RadioDotStyle = (): CssFunctionReturnType =>
       borderRadius: 'round',
       left: '8px',
       top: '8px',
-      minHeight: '12px',
-      minWidth: '12px',
+      minHeight: '16px',
+      minWidth: '16px',
     },
   })

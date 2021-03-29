@@ -2,6 +2,8 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { DefaultTheme, Theme } from '~/core/theme'
 
+import GlobalStyles from './styles/GlobalStyles'
+
 interface ProviderProps {
   theme?: Partial<Theme>
   children: React.ReactChildren | React.ReactChild
@@ -18,7 +20,12 @@ const Provider: React.FC<ProviderProps> = ({ children }) => {
     document.head.appendChild(fontLink)
   }, [])
 
-  return <ThemeProvider theme={DefaultTheme}>{children}</ThemeProvider>
+  return (
+    <ThemeProvider theme={DefaultTheme}>
+      <GlobalStyles />
+      {children}
+    </ThemeProvider>
+  )
 }
 
 export default Provider

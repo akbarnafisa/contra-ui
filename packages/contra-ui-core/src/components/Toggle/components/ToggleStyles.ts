@@ -38,8 +38,8 @@ export const ToggleInputStyle = (): CssFunctionReturnType =>
 export const ToggleSwitchStyle = (): CssFunctionReturnType =>
   css({
     position: 'absolute',
-    height: '32px',
-    width: '32px',
+    height: '36px',
+    width: '36px',
     left: 0,
     bottom: 0,
     backgroundColor: 'white',
@@ -52,8 +52,8 @@ export const ToggleSwitchStyle = (): CssFunctionReturnType =>
 
     '&:after': {
       content: '""',
-      width: '12px',
-      height: '12px',
+      width: '16px',
+      height: '16px',
       border: 'md',
       borderRadius: 'round',
       position: 'relative',

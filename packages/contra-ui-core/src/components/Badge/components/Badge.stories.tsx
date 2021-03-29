@@ -15,18 +15,18 @@ export const Default = () => <Badge> Badge Text </Badge>
 
 export const Appearance = () => (
   <>
-    <Badge mr="xs">Badge Text</Badge>
-    <Badge mr="xs" appearance="blue">Badge Text</Badge>
-    <Badge mr="xs" appearance="green">
+    <Badge mb="xs" mr="xs">Badge Text</Badge>
+    <Badge mb="xs" mr="xs" appearance="blue">Badge Text</Badge>
+    <Badge mb="xs" mr="xs" appearance="green">
       Badge Text
     </Badge>
-    <Badge mr="xs" appearance="pink">
+    <Badge mb="xs" mr="xs" appearance="pink">
       Badge Text
     </Badge>
-    <Badge mr="xs" appearance="red">
+    <Badge mb="xs" mr="xs" appearance="red">
       Badge Text
     </Badge>
-    <Badge mr="xs" appearance="yellow">
+    <Badge mb="xs" mr="xs" appearance="yellow">
       Badge Text
     </Badge>
   </>

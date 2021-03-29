@@ -132,6 +132,7 @@ const Chats = () => {
 
 const ScreenChat = () => (
   <Box
+    mb="lg"
     width="100%"
     maxWidth="375px"
     bg="white"

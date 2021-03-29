@@ -61,7 +61,7 @@ const Header = () => (
             height="24"
           />
           <Title level="21" ml="xs">
-            Send message
+            Message
           </Title>
         </Flex>
       </Button>
@@ -130,9 +130,8 @@ const Images = () => {
       </Title>
       <Flex py="md" px="md" overflow="scroll">
         {imageItems.map((item, index) => (
-          <>
+          <Box key={item.id}>
             <Flex
-              key={item.id}
               bg={item.appearance}
               border="2px solid black"
               borderRadius="md"
@@ -150,7 +149,7 @@ const Images = () => {
             {index === imageItems.length - 1 && (
               <Box pl="md" />
             )}
-          </>
+          </Box>
         ))}
       </Flex>
     </Box>
@@ -214,6 +213,7 @@ const Tags = () => {
 
 const ScreenProfile = () => (
   <Box
+    mb="lg"
     width="100%"
     maxWidth="375px"
     bg="white"

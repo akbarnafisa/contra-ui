@@ -1,8 +1,10 @@
-import { Box, Title } from '@contra-ui/core'
+import { Box, Flex, Title } from '@contra-ui/core'
 
 import Container from './Layout/Container'
-// import ScreenChat from './Screen/ScreenChat'
+import ScreenChat from './Screen/ScreenChat'
 import ScreenProfile from './Screen/ScreenProfile'
+import ScreenPlaylist from './Screen/ScreenPlaylist'
+import ScreenAlarm from './Screen/ScreenAlarm'
 
 const Example = () => (
   <Box bg="grey09">
@@ -16,8 +18,23 @@ const Example = () => (
         >
           Examples
         </Title>
-        {/* <ScreenChat /> */}
-        <ScreenProfile />
+        <Flex
+          flexWrap="wrap"
+          justifyContent="space-around"
+          alignItems="flex-start"
+        >
+          <ScreenChat />
+          <ScreenProfile />
+        </Flex>
+
+        <Flex
+          flexWrap="wrap"
+          justifyContent="space-around"
+          alignItems="flex-start"
+        >
+          <ScreenPlaylist />
+          <ScreenAlarm />
+        </Flex>
       </>
     </Container>
   </Box>

@@ -1,5 +1,5 @@
 {
-  "name": "contra-ui-example",
+  "name": "@contra-ui/example",
   "private": true,
   "version": "0.1.0",
   "scripts": {
@@ -9,14 +9,16 @@
     "build": "next build",
     "start": "next start"
   },
+  "peerDependencies": {
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0",
+    "styled-components": "^5.1.0",
+    "next-transpile-modules": "^6.3.0"
+  },
   "dependencies": {
     "@contra-ui/core": "0.0.1",
-    "next": "10.0.9",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "styled-components": "^5.2.1"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.12.0"
+    "next": "10.0.9"
   }
 }

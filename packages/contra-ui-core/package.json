@@ -17,6 +17,8 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "styled-components": "^5.1.0"
@@ -33,17 +35,11 @@
     "@storybook/addon-links": "^6.1.17",
     "@storybook/addons": "^6.1.17",
     "@storybook/react": "^6.1.17",
-    "@types/react": "^17.0.1",
-    "@types/react-dom": "^17.0.0",
-    "@types/styled-system": "^5.1.10",
-    "@types/styled-system__css": "^5.0.14",
-    "@types/styled-system__should-forward-prop": "^5.1.2",
+    "@types/styled-components": "^5.1.7",
     "babel-loader": "^8.2.2",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "babel-plugin-module-resolver": "^4.1.0",
     "husky": "^4.3.8",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "tsc-alias": "^1.2.9",
     "tsdx": "^0.14.1",
@@ -53,8 +49,9 @@
   "dependencies": {
     "@styled-system/css": "^5.1.5",
     "@styled-system/should-forward-prop": "^5.1.5",
-    "@types/styled-components": "^5.1.7",
-    "styled-components": "^5.2.1",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+    "@types/styled-system": "^5.1.10",
+    "@types/styled-system__css": "^5.0.14",
+    "@types/styled-system__should-forward-prop": "^5.1.2"
   }
 }

@@ -7,18 +7,23 @@
     "dev:ts": "yarn dev & yarn ts:watch",
     "ts:watch": "yarn tsc --watch",
     "build": "next build",
+    "build:analyze": "ANALYZE=true yarn build",
     "start": "next start"
   },
   "peerDependencies": {
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
+    "next-transpile-modules": "^6.3.0",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
-    "styled-components": "^5.1.0",
-    "next-transpile-modules": "^6.3.0"
+    "styled-components": "^5.1.0"
   },
   "dependencies": {
     "@contra-ui/core": "0.0.1",
     "next": "10.0.9"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^10.1.3",
+    "next-compose-plugins": "^2.2.1"
   }
 }

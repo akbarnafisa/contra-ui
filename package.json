@@ -16,6 +16,7 @@
     "dev:core": "yarn workspace @contra-ui/core start",
     "dev:example": "yarn workspace @contra-ui/example dev",
     "build:core": "yarn workspace @contra-ui/core build",
+    "build:example-analyze": "yarn workspace @contra-ui/example build:analyze",
     "storybook": "yarn workspace @contra-ui/core storybook",
     "lerna:clean": "lerna clean",
     "lerna:bootstrap": "lerna bootstrap --use-workspaces",

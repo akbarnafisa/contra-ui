@@ -3,15 +3,17 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/core.esm.js",
+  "module": "dist/esm/index",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
+  "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build && tsc-alias -p tsconfig.json",
+    "build:rollup": "rollup -c && tsc-alias -p tsconfig.json",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 9001",
     "build-storybook": "build-storybook"
@@ -30,6 +32,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.1.17",
@@ -39,8 +43,13 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "babel-plugin-module-resolver": "^4.1.0",
+    "globby": "^11.0.3",
     "husky": "^4.3.8",
     "react-is": "^17.0.1",
+    "rollup": "^2.44.0",
+    "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.18",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "tsc-alias": "^1.2.9",
     "tsdx": "^0.14.1",
     "tslib": "^2.1.0",
@@ -49,9 +58,9 @@
   "dependencies": {
     "@styled-system/css": "^5.1.5",
     "@styled-system/should-forward-prop": "^5.1.5",
-    "styled-system": "^5.1.5",
     "@types/styled-system": "^5.1.10",
     "@types/styled-system__css": "^5.0.14",
-    "@types/styled-system__should-forward-prop": "^5.1.2"
+    "@types/styled-system__should-forward-prop": "^5.1.2",
+    "styled-system": "^5.1.5"
   }
 }

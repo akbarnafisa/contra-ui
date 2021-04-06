@@ -1,14 +1,11 @@
-import { Title } from '@contra-ui/core'
-import styled from 'styled-components'
+import Hero from '../components/Hero'
+import Example from '../components/Example'
 
-const Ggwp = styled(Title)({
-  color: 'red'
-})
-
-const wew = () => (
-  <div>
-    <Ggwp level="44">wew</Ggwp>
-  </div>
+const Home = () => (
+  <>
+    <Hero />
+    <Example />
+  </>
 )
 
-export default wew
+export default Home

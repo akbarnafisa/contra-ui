@@ -60,6 +60,5 @@ Avatar.defaultProps = {
   appearance: 'yellow',
 }
 
-// test123321xx
 
 export default Avatar

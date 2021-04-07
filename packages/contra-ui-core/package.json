@@ -16,7 +16,7 @@
     "build:rollup": "rollup -c && tsc-alias -p tsconfig.json",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 9001",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook --quiet"
   },
   "peerDependencies": {
     "@types/react": "^17.0.1",

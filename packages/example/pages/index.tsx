@@ -8,6 +8,4 @@ const Home = () => (
   </>
 )
 
-// test123321
-
 export default Home

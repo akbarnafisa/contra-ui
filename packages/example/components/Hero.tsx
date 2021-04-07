@@ -19,6 +19,8 @@ const Hero = () => (
           as="img"
           src="/logo.svg"
           mb="md"
+          width="253px"
+          height="60px"
         />
         <Body
           level="17"
@@ -40,6 +42,9 @@ const Hero = () => (
           as="img"
           src="/hero.png"
           width="100%"
+          style={{
+            aspectRatio: '7/5',
+          }}
         />
       </>
     </Container>

@@ -4,16 +4,15 @@
   ],
   "command": {
     "version": {
-      "allowBranch": "master"
+      "allowBranch": "main"
     },
     "publish": {
       "conventionalCommits": true,
-      "allowBranch": "master",
+      "allowBranch": "main",
       "message": "chore(release): publish"
     }
   },
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "registry": "http://npm.tool.dana.id/",
   "version": "independent"
 }

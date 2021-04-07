@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3](https://github.com/akbarnafisa/contra-ui/compare/@contra-ui/core@0.0.2...@contra-ui/core@0.0.3) (2021-04-07)
+
+
+### Features
+
+* **Avatar:** test prepublish ([8ea053c](https://github.com/akbarnafisa/contra-ui/commit/8ea053ca4e7df9faba32cc15fbce7358a49beca1))
+
+
+
+
+
 ## 0.0.2 (2021-04-07)
 
 

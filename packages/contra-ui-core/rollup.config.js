@@ -32,7 +32,11 @@ export default globby([
     {
       input: {
         index: 'src/index.ts',
-        ...componentInput,
+        /**
+         * There is an issue in styled-components in we use multiple file modules
+         * to implement tree-shaking
+         */
+        // ...componentInput,
       },
       output: [
         {

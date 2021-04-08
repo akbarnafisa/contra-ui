@@ -12,9 +12,9 @@
   "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build && tsc-alias -p tsconfig.json",
-    "build:rollup": "rollup -c && tsc-alias -p tsconfig.json",
-    "prepublish": "rm -rf dist && yarn build",
+    "build": "rm -rf dist && tsdx build && tsc-alias -p tsconfig.json",
+    "build:rollup": "rm -rf dist && rollup -c && tsc-alias -p tsconfig.json",
+    "prepublish": "yarn build:rollup",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 9001",
     "build-storybook": "build-storybook --quiet"

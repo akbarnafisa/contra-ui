@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.8](https://github.com/akbarnafisa/contra-ui/compare/@contra-ui/core@0.0.7...@contra-ui/core@0.0.8) (2021-04-08)
+
+**Note:** Version bump only for package @contra-ui/core
+
+
+
+
+
 ## [0.0.7](https://github.com/akbarnafisa/contra-ui/compare/@contra-ui/core@0.0.6...@contra-ui/core@0.0.7) (2021-04-08)
 
 **Note:** Version bump only for package @contra-ui/core

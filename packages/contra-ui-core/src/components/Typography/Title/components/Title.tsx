@@ -1,11 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-
-import css from '@styled-system/css'
+import { DefaultTheme as theme } from '~/core/theme'
 import { variant } from 'styled-system'
 
 import { allSystemProps, AllSystemProps, sfp } from '~/utils/props'
-
 
 const variants = {
   54: {
@@ -34,7 +32,6 @@ const variants = {
   },
 }
 
-
 export interface TitleProps extends AllSystemProps {
   className?: string
   style?: React.CSSProperties
@@ -45,16 +42,16 @@ export interface TitleProps extends AllSystemProps {
 const Title = styled('h2').withConfig<TitleProps>({
   shouldForwardProp: sfp(['level']),
 })(
+  {
+    margin: 0,
+    fontFamily: theme.fonts.title,
+    color: theme.colors.black,
+    fontWeight: theme.fontWeights.bold,
+    lineHeight: theme.lineHeights.title
+  },
   variant({
     variants,
     prop: 'level',
-  }),
-  css({
-    margin: 0,
-    fontFamily: 'title',
-    color: 'black',
-    fontWeight: 'bold',
-    lineHeight: 'title',
   }),
   allSystemProps
 )

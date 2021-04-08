@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
-import css from '@styled-system/css'
+import { DefaultTheme as theme } from '~/core/theme'
 import { variant } from 'styled-system'
 
 import { allSystemProps, AllSystemProps, sfp } from '~/utils/props'
@@ -20,7 +19,6 @@ const variants = {
     fontSize: '12',
   },
 }
-
 export interface BodyProps extends AllSystemProps {
   className?: string
   style?: React.CSSProperties
@@ -31,17 +29,16 @@ export interface BodyProps extends AllSystemProps {
 const Body = styled('p').withConfig<BodyProps>({
   shouldForwardProp: sfp(['level']),
 })(
-  {},
+  {
+    margin: 0,
+    fontFamily: theme.fonts.body,
+    color: theme.colors.grey09,
+    fontWeight: theme.fontWeights.medium,
+    lineHeight: theme.lineHeights.body
+  },
   variant({
     variants,
     prop: 'level',
-  }),
-  css({
-    margin: 0,
-    fontFamily: 'body',
-    color: 'grey09',
-    fontWeight: 'normal',
-    lineHeight: 'body',
   }),
   allSystemProps
 )

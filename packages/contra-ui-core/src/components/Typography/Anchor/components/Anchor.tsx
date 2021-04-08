@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
-import css from '@styled-system/css'
+import { DefaultTheme as theme } from '~/core/theme'
 import { variant } from 'styled-system'
 
 import { allSystemProps, AllSystemProps, sfp } from '~/utils/props'
@@ -34,18 +33,17 @@ export interface AnchorProps extends StyledSystemProps {
 const Anchor = styled('a').withConfig<AnchorProps>({
   shouldForwardProp: sfp(['level']),
 })(
-  {},
+  {
+    margin: 0,
+    fontFamily: theme.fonts.body,
+    color: theme.colors.grey09,
+    fontWeight: theme.fontWeights.medium,
+    lineHeight: theme.lineHeights.body,
+    textDecoration: 'underline',
+  },
   variant({
     variants,
     prop: 'level',
-  }),
-  css({
-    margin: 0,
-    fontFamily: 'body',
-    color: 'grey09',
-    fontWeight: 'medium',
-    lineHeight: 'body',
-    textDecoration: 'underline',
   }),
   allSystemProps
 )

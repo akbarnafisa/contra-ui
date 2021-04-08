@@ -44,7 +44,7 @@ const appearance = {
   inactive: grey.grey03,
 }
 
-const colors = {
+const colors: { [key: string]: any } = {
   white: '#fff',
   black: '#000',
 

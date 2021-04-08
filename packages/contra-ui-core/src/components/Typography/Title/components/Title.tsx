@@ -56,4 +56,5 @@ const Title = styled('h2').withConfig<TitleProps>({
   allSystemProps
 )
 
+
 export default Title

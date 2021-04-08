@@ -3,7 +3,7 @@
   "version": "0.0.5",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/esm/index",
+  "module": "dist/esm/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -14,7 +14,7 @@
     "start": "tsdx watch",
     "build": "tsdx build && tsc-alias -p tsconfig.json",
     "build:rollup": "rollup -c && tsc-alias -p tsconfig.json",
-    "prepublish": "rm -rf dist && yarn build",
+    "prepublish": "rm -rf dist && yarn build:rollup",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 9001",
     "build-storybook": "build-storybook --quiet"

@@ -48,6 +48,7 @@ const Avatar: React.FC<AvatarProps> = ({ className, style, size, entityName, src
   )
 }
 
+
 Avatar.defaultProps = {
   size: '48',
   appearance: 'yellow',

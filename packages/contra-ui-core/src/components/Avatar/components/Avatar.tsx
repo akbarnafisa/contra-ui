@@ -19,7 +19,7 @@ const Avatar: React.FC<AvatarProps> = ({ className, style, size, entityName, src
   }
 
   const renderChild = (): JSX.Element | null => {
-    // TODO: if error, show initial name
+    // TODO: if error, show initial namee
     if (src) {
       return <img src={src} alt={alt} />
     }

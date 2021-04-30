@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.9-alpha.0](https://github.com/akbarnafisa/contra-ui/compare/@contra-ui/core@0.0.8...@contra-ui/core@0.0.9-alpha.0) (2021-04-30)
+
+
+### Features
+
+* **Avatar:** test ([061d926](https://github.com/akbarnafisa/contra-ui/commit/061d9265615b6d8802149c67476d77aa62a75f24))
+
+
+
+
+
 ## [0.0.8](https://github.com/akbarnafisa/contra-ui/compare/@contra-ui/core@0.0.7...@contra-ui/core@0.0.8) (2021-04-08)
 
 **Note:** Version bump only for package @contra-ui/core

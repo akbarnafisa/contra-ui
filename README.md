@@ -3,6 +3,7 @@
 ![Contra UI](/logo.png)
 ## Contra UI
 </div>
+
 Contra UI is a component library created by [Vijay Verma](https://vijayverma.co/), all of the design and asset in this project is referenced by it.
 
 - [Storybook](https://contra-ui-core.vercel.app/)
@@ -45,7 +46,7 @@ function Example () {
 }
 ```
 
-For others component, please check the available component in the [storybook.](https://contra-ui-example.vercel.app/)
+For others component, please check the available component in the [storybook.](https://contra-ui-core.vercel.app/)
 
 ## Development
 
